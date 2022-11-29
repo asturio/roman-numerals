@@ -22,8 +22,18 @@ public class RomanNumeralTest {
 				Arguments.of("VI", 6),
 				Arguments.of("VIII", 8),
 				Arguments.of("IX", 9),
-				Arguments.of("X", 10)
-
+				Arguments.of("X", 10),
+				Arguments.of("XI", 11),
+				Arguments.of("XIII", 13),
+				Arguments.of("XIV", 14),
+				Arguments.of("XV", 15),
+				Arguments.of("XVI", 16),
+				Arguments.of("XIX", 19),
+				Arguments.of("XX", 20),
+				Arguments.of("XXVIII", 28),
+				Arguments.of("XXXII", 32),
+				Arguments.of("XXXIX", 39),
+				Arguments.of("", 0)
 		);
 	}
 
