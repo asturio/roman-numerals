@@ -26,4 +26,8 @@ public class RomanNumeralTest {
 	void romanOf4_shouldBe_IV() {
 		assertThat(romanNumeral.convert(4)).isEqualTo("IV");
 	}
+	@Test
+	void romanOf5_shouldBe_V() {
+		assertThat(romanNumeral.convert(5)).isEqualTo("V");
+	}
 }
