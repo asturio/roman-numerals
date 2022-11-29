@@ -19,7 +19,10 @@ public class RomanNumeralTest {
 				Arguments.of("III", 3),
 				Arguments.of("IV", 4),
 				Arguments.of("V", 5),
-				Arguments.of("VI", 6)
+				Arguments.of("VI", 6),
+				Arguments.of("VIII", 8),
+				Arguments.of("IX", 9)
+
 		);
 	}
 
