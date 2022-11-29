@@ -2,7 +2,6 @@ package de.lv1871.dojos.roman;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RomanNumeralTest {
@@ -17,5 +16,10 @@ public class RomanNumeralTest {
 	@Test
 	void romanOf2_shouldBe_II() {
 		assertThat(romanNumeral.convert(2)).isEqualTo("II");
+	}
+
+	@Test
+	void romanOf3_shouldBe_III() {
+		assertThat(romanNumeral.convert(3)).isEqualTo("III");
 	}
 }
