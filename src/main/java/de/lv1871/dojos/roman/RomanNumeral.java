@@ -7,7 +7,9 @@ public class RomanNumeral {
 			return "";
 		}
 
-		if (naturalNumber == 9) {
+		if (naturalNumber >= 10) {
+			return "X" + convert(naturalNumber - 10);
+		} else if (naturalNumber == 9) {
 			return "IX";
 		} else if (naturalNumber >= 5) {
 			return "V" + convert(naturalNumber - 5);
