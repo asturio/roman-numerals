@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class RomanNumeralTest {
 
-	private RomanNumeral romanNumeral = new RomanNumeral();
+	private final RomanNumeral romanNumeral = new RomanNumeral();
 
 	@Test
 	void romanOf1_shouldBe_I() {
@@ -21,5 +21,9 @@ public class RomanNumeralTest {
 	@Test
 	void romanOf3_shouldBe_III() {
 		assertThat(romanNumeral.convert(3)).isEqualTo("III");
+	}
+	@Test
+	void romanOf4_shouldBe_IV() {
+		assertThat(romanNumeral.convert(4)).isEqualTo("IV");
 	}
 }
