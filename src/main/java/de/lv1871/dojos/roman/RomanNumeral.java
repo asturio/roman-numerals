@@ -15,9 +15,8 @@ public class RomanNumeral {
 			return "V" + convert(naturalNumber - 5);
 		} else if (naturalNumber == 4) {
 			return "IV";
-		} else if (naturalNumber > 1) {
+		} else {
 			return "I" + convert(naturalNumber - 1);
 		}
-		return "I";
 	}
 }
