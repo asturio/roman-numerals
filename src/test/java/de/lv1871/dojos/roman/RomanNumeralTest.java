@@ -21,7 +21,8 @@ public class RomanNumeralTest {
 				Arguments.of("V", 5),
 				Arguments.of("VI", 6),
 				Arguments.of("VIII", 8),
-				Arguments.of("IX", 9)
+				Arguments.of("IX", 9),
+				Arguments.of("X", 10)
 
 		);
 	}
