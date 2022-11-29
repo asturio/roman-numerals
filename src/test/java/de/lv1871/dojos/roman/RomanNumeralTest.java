@@ -30,7 +30,7 @@ public class RomanNumeralTest {
 				Arguments.of("XVI", 16),
 				Arguments.of("XIX", 19),
 				Arguments.of("XX", 20),
-				Arguments.of("XXVIII", 28),
+				Arguments.of("XXVII", 27),
 				Arguments.of("XXXII", 32),
 				Arguments.of("XXXIX", 39),
 				Arguments.of("", 0)
