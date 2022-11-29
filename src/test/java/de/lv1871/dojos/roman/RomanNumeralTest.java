@@ -2,37 +2,31 @@ package de.lv1871.dojos.roman;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.jupiter.api.Test;
+import java.util.stream.Stream;
+
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 
 public class RomanNumeralTest {
 
 	private final RomanNumeral romanNumeral = new RomanNumeral();
 
-	@Test
-	void romanOf1_shouldBe_I() {
-		assertThat(romanNumeral.convert(1)).isEqualTo("I");
+	public static Stream<Arguments> testArguments() {
+		return Stream.of(
+				Arguments.of("I", 1),
+				Arguments.of("II", 2),
+				Arguments.of("III", 3),
+				Arguments.of("IV", 4),
+				Arguments.of("V", 5),
+				Arguments.of("VI", 6)
+		);
 	}
 
-	@Test
-	void romanOf2_shouldBe_II() {
-		assertThat(romanNumeral.convert(2)).isEqualTo("II");
-	}
-
-	@Test
-	void romanOf3_shouldBe_III() {
-		assertThat(romanNumeral.convert(3)).isEqualTo("III");
-	}
-	@Test
-	void romanOf4_shouldBe_IV() {
-		assertThat(romanNumeral.convert(4)).isEqualTo("IV");
-	}
-	@Test
-	void romanOf5_shouldBe_V() {
-		assertThat(romanNumeral.convert(5)).isEqualTo("V");
-	}
-
-	@Test
-	void romanOf6_shouldBe_VI() {
-		assertThat(romanNumeral.convert(6)).isEqualTo("VI");
+	@ParameterizedTest
+	@MethodSource("testArguments")
+	void testRomanNumerals(String expected, int input) {
+		// then
+		assertThat(romanNumeral.convert(input)).isEqualTo(expected);
 	}
 }
