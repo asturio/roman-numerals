@@ -1,6 +1,7 @@
 package de.lv1871.dojos.roman;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.params.provider.Arguments.of;
 
 import java.util.stream.Stream;
 
@@ -14,26 +15,30 @@ public class RomanNumeralTest {
 
 	public static Stream<Arguments> testArguments() {
 		return Stream.of(
-				Arguments.of("I", 1),
-				Arguments.of("II", 2),
-				Arguments.of("III", 3),
-				Arguments.of("IV", 4),
-				Arguments.of("V", 5),
-				Arguments.of("VI", 6),
-				Arguments.of("VIII", 8),
-				Arguments.of("IX", 9),
-				Arguments.of("X", 10),
-				Arguments.of("XI", 11),
-				Arguments.of("XIII", 13),
-				Arguments.of("XIV", 14),
-				Arguments.of("XV", 15),
-				Arguments.of("XVI", 16),
-				Arguments.of("XIX", 19),
-				Arguments.of("XX", 20),
-				Arguments.of("XXVII", 27),
-				Arguments.of("XXXII", 32),
-				Arguments.of("XXXIX", 39),
-				Arguments.of("", 0)
+				of("I", 1),
+				of("II", 2),
+				of("III", 3),
+				of("IV", 4),
+				of("V", 5),
+				of("VI", 6),
+				of("VIII", 8),
+				of("IX", 9),
+				of("X", 10),
+				of("XI", 11),
+				of("XIII", 13),
+				of("XIV", 14),
+				of("XV", 15),
+				of("XVI", 16),
+				of("XIX", 19),
+				of("XX", 20),
+				of("XXVII", 27),
+				of("XXXII", 32),
+				of("XXXIX", 39),
+                of("XL", 40),
+                of("XLI", 41),
+                of("XLIX", 49),
+                of("L", 50),
+				of("", 0)
 		);
 	}
 
