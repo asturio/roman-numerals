@@ -11,40 +11,42 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 public class RomanNumeralTest {
 
-	private final RomanNumeral romanNumeral = new RomanNumeral();
+    private final RomanNumeral romanNumeral = new RomanNumeral();
 
-	public static Stream<Arguments> testArguments() {
-		return Stream.of(
-				of("I", 1),
-				of("II", 2),
-				of("III", 3),
-				of("IV", 4),
-				of("V", 5),
-				of("VI", 6),
-				of("VIII", 8),
-				of("IX", 9),
-				of("X", 10),
-				of("XI", 11),
-				of("XIII", 13),
-				of("XIV", 14),
-				of("XV", 15),
-				of("XVI", 16),
-				of("XIX", 19),
-				of("XX", 20),
-				of("XXVII", 27),
-				of("XXXII", 32),
-				of("XXXIX", 39),
-                of("XL", 40),
-                of("XLI", 41),
-                of("XLIX", 49),
-                of("L", 50),
+    public static Stream<Arguments> testArguments() {
+        return Stream.of(
+            of("I", 1),
+            of("II", 2),
+            of("III", 3),
+            of("IV", 4),
+            of("V", 5),
+            of("VI", 6),
+            of("VIII", 8),
+            of("IX", 9),
+            of("X", 10),
+            of("XI", 11),
+            of("XIII", 13),
+            of("XIV", 14),
+            of("XV", 15),
+            of("XVI", 16),
+            of("XIX", 19),
+            of("XX", 20),
+            of("XXVII", 27),
+            of("XXXII", 32),
+            of("XXXIX", 39),
+            of("XL", 40),
+            of("XLI", 41),
+            of("XLIX", 49),
+            of("L", 50),
             of("LI", 51),
             of("LIX", 59),
             of("LX", 60),
             of("LXXI", 71),
             of("LXXXIX", 89),
             of("XC", 90),
-				of("", 0)
+            of("XCI", 91),
+            of("XCIX", 99),
+            of("", 0)
 		);
 	}
 
