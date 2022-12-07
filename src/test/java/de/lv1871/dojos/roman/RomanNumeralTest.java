@@ -57,6 +57,9 @@ public class RomanNumeralTest {
             of("D", 500),
             of("DC", 600),
             of("DCCCXCVIII", 898),
+            of("CM", 900),
+            of("CMXLIX", 949),
+            of("CMLXXXIV", 984),
             of("", 0)
 		);
 	}
