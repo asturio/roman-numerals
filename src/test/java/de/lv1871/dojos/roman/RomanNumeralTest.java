@@ -60,6 +60,10 @@ public class RomanNumeralTest {
             of("CM", 900),
             of("CMXLIX", 949),
             of("CMLXXXIV", 984),
+            of("M", 1000),
+            of("MCMLXXVI", 1976),
+            of("MDCCCLXXI", 1871),
+            of("MMXXII", 2022),
             of("", 0)
 		);
 	}

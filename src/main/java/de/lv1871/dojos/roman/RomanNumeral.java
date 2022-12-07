@@ -7,7 +7,9 @@ public class RomanNumeral {
 			return "";
 		}
 
-        if (naturalNumber >= 900) {
+        if (naturalNumber >= 1000) {
+            return "M" + convert(naturalNumber - 1000);
+        } else if (naturalNumber >= 900) {
             return "CM" + convert(naturalNumber - 900);
         } else if (naturalNumber >= 500) {
             return "D" + convert(naturalNumber - 500);
