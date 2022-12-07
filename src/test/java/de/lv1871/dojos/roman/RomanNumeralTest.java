@@ -38,6 +38,12 @@ public class RomanNumeralTest {
                 of("XLI", 41),
                 of("XLIX", 49),
                 of("L", 50),
+            of("LI", 51),
+            of("LIX", 59),
+            of("LX", 60),
+            of("LXXI", 71),
+            of("LXXXIX", 89),
+            of("XC", 90),
 				of("", 0)
 		);
 	}

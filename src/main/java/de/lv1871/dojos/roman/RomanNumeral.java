@@ -7,7 +7,9 @@ public class RomanNumeral {
 			return "";
 		}
 
-        if (naturalNumber >= 50) {
+        if (naturalNumber >= 90) {
+            return "XC" + convert(naturalNumber - 90);
+        } else if (naturalNumber >= 50) {
             return "L" + convert(naturalNumber - 50);
         } else if (naturalNumber >= 40) {
             return "XL" + convert(naturalNumber - 40);
